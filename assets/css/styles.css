@@ -362,10 +362,10 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, .3);
+    background-color: rgba(42, 42, 42, 0.3);
     border-radius: .5rem;
     cursor: pointer;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
     transition: .3s
 }
 
@@ -377,7 +377,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, .3);
+    background-color: rgba(42, 42, 42, .3);
     border-radius: .5rem;
     cursor: pointer;
     backdrop-filter: blur(10px);
@@ -401,7 +401,7 @@ section {
 }
 
 .portfolio__link-name {
-    color: var(--dark-color)
+    color: var(--white-color)
 }
 
 .contact__container {
