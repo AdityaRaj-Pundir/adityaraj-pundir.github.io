@@ -330,7 +330,7 @@ section {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    display: inline-flex;
+    display: flex;
     margin: 15px
 }
 
@@ -592,6 +592,6 @@ section {
 
     .home__img {
         width: 500px;
-        right: 24%
+        right: 10%
     }
 }
