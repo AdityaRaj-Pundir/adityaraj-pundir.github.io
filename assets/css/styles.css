@@ -344,21 +344,22 @@ section {
 
 .portfolio__img img {
     border-radius: .5rem;
-    width: 500px;
+    width: 100%;
     height: auto
 }
 
 .long__img img {
     border-radius: .5rem;
-    width: 500px;
+    width: 100%;
     height: auto
 }
 
 .long__link {
     position: absolute;
-    bottom: -40%;
+    visibility: hidden;
+    bottom: 25%;
     width: 100%;
-    height: 138px;
+    height: 0%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -366,7 +367,7 @@ section {
     border-radius: .5rem;
     cursor: pointer;
     backdrop-filter: blur(15px);
-    transition: .3s
+    transition: .1s ease-in-out;
 }
 
 .portfolio__link {
@@ -381,12 +382,12 @@ section {
     border-radius: .5rem;
     cursor: pointer;
     backdrop-filter: blur(10px);
-    transition: .3s
+    transition: .1s ease-in-out;
 }
 
 .portfolio__img:hover .portfolio__link {
     bottom: 0;
-    width: 500px;
+    width: 100%;
 }
 
 .center-align {
@@ -396,8 +397,10 @@ section {
 }
 
 .long__img:hover .long__link {
-    bottom: 22%;
-    width: 500px;
+    visibility: visible;
+    bottom: 25%;
+    width: 100%;
+    height: 50%;
 }
 
 .portfolio__link-name {
@@ -479,11 +482,17 @@ section {
 @media screen and (max-width:767px) {
     .long__link {
         bottom: -9rem;
+        height: 0%;
+    }
+
+    .footer__title {
+        padding-top: 20px;
     }
 
     .long__img:hover .long__link {
         bottom: 0rem;
-        width: 246px;
+        width: 100%;
+        height: 100%;
     }
 }
 
